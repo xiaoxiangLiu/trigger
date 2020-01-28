@@ -1,0 +1,26 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.1, pytest-5.3.4, py-1.8.1, pluggy-0.13.1
+rootdir: E:\AutoTest_2\triger, inifile: pytest.ini
+plugins: allure-pytest-2.8.6, sugar-0.9.2
+collected 2 items
+
+test_log.py::test_log_01 fixture session
+fixture class
+this is test log 01
+PASSED
+test_log.py::test_log_02 fixture class
+this is test log 02
+FAILED
+
+================================== FAILURES ===================================
+_________________________________ test_log_02 _________________________________
+
+    def test_log_02():
+        print("this is test log 02")
+>       assert 1 == 2
+E       assert 1 == 2
+E         -1
+E         +2
+
+test_log.py:12: AssertionError
+========================= 1 failed, 1 passed in 0.06s =========================
